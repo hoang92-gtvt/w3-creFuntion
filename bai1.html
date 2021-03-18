@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In các ky tư trong chuỗi</title>
+</head>
+<body>
+<script>
+    let str1= 'abcdeadghijk';
+    let arr1 =[];
+    let arr2=[];
+    console.log(str1)
+    for (let i = 0; i <str1.length ; i++) {
+        let giatri1= str1[i]; // trả về ký tự số của 'a', 'b'
+
+        console.log( arr1[giatri1]);// trả về giá trị undefind, vì mảng giá trị này chưa dược khai báo trong mảng arr1;
+        if(!arr1[giatri1]){  // điều kiện so sanh của underfind là false, phủ định của false là true ,
+            arr2.push(str1[i]); // thêm ký tự thứ i của chuỗi vào mảng arr2
+            arr1[giatri1] = 1 ; //gắn lại điều kiện trả về cho phần tử đã tồn tại là 1 để khi so sanh điều kiện sẽ trả về true
+        }
+
+    }
+    console.log(arr2);
+</script>
+</body>
+</html>
