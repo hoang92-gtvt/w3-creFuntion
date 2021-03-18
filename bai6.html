@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Length</title>
+</head>
+<body>
+    <p>Giá trị meter     <input type="number" id="meter" oninput="convertFoot(this.value)"/></p>
+    <p>Giá trị foot      <input type="number" id="foot" oninput="convertMeter(this.value)"/></p>
+
+    <script>
+        function convertFoot(giatri){
+            let meter1=giatri;
+            let foot1=giatri*3.279;
+            document.getElementById('foot').value=foot1
+            // return foot1;
+        }
+
+        function convertMeter(giatri){
+            let foot2=giatri;
+            let meter2=giatri*0.305;
+            document.getElementById('meter').value=meter2
+            // return meter2;
+        }
+
+
+    </script>
+</body>
+</html>
